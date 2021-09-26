@@ -1,0 +1,20 @@
+{
+  "name": "redis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bruno Ribeiro <brunoenribeiro@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
