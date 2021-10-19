@@ -1,0 +1,18 @@
+{
+  "name": "todo-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bruno Ribeiro <brunoenribeiro@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.3.0"
+  },
+  "dependencies": {
+    "apollo-server": "^3.4.0",
+    "graphql": "^15.6.1",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "start": "ts-node server.ts"
+  }
+}
