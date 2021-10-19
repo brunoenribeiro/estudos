@@ -4,7 +4,7 @@ Estudo de arquitetura baseado na proposta do [Apollo Server](https://www.apollog
 
 ## Instalação
 
-- Clone o servidor de testes;
+- Clone o [servidor de testes](https://github.com/brunoenribeiro/estudos/tree/main/todo-server);
 - Clone este repositório;
 - Execute `yarn install` em ambos repositórios.
 
