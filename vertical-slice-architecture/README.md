@@ -12,3 +12,12 @@ Estudo de arquitetura baseado na proposta do [Apollo Server](https://www.apollog
 
 - `yarn start` em ambos repositórios;
 - Acesse `http://localhost:3000`.
+
+## Stack
+
+- **Linguagem**: TypeScript;
+- **Framework JS**: React;
+- **Tooling**: React Scripts;
+- **Bundling**: Webpack (config padrão do CRA);
+- **API Client**: Apollo Client + GraphQL;
+- **State Management**: Apollo Client (cache).
