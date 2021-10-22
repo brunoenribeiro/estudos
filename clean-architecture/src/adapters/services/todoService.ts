@@ -10,8 +10,17 @@ export interface ITodoService {
 
 const TodoTestServerService: ITodoService = {
   getTodos: async () => {
-    // TODO: IMPLEMENT API REQUEST
-    return [];
+    const { data } = await getGraphQLClient().query(
+      `query GetTodos {
+        todos {
+          id
+          description
+          done
+        }
+      }`
+    );
+
+    return data.todos;
   },
   addTodo: async (description) => {
     const { data } = await getGraphQLClient().mutate(

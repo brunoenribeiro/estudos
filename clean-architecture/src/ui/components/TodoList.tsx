@@ -2,6 +2,7 @@ import { FC, useContext } from "react";
 import { Box, Checkbox, Typography, FormGroup, FormControlLabel, Button } from '@material-ui/core';
 import { DeleteForever } from '@material-ui/icons';
 import { Context } from '../../adapters/services/stateService';
+import { useGetTodos } from "../../adapters/ui/useGetTodos";
 
 interface Props {
   onCheck: (todoId: string, checked: boolean) => void;
@@ -9,16 +10,16 @@ interface Props {
 }
 
 const TodoList: FC<Props> = ({ onCheck, onDelete }) => {
+  const { loading, error } = useGetTodos();
   const { state: { todoList } } = useContext(Context);
-  // TODO: IMPLEMENT GET TODOS
 
-  // if (loading) {
-  //   return <Box>Carregando...</Box>
-  // }
+  if (loading) {
+    return <Box>Carregando...</Box>
+  }
 
-  // if (error) {
-  //   return <Box><Typography color="error">{JSON.stringify(error)}</Typography></Box>;
-  // }
+  if (error) {
+    return <Box><Typography color="error">{JSON.stringify(error)}</Typography></Box>;
+  }
 
   return (
     <Box>
