@@ -12,3 +12,12 @@ Estudo de arquitetura baseado neste [artigo](https://dev.to/bespoyasov/clean-arc
 
 - `yarn start` em ambos repositórios;
 - Acesse `http://localhost:3000`.
+
+## Stack
+
+- **Linguagem**: TypeScript;
+- **Framework JS**: React;
+- **Tooling**: React Scripts;
+- **Bundling**: Webpack (config padrão do CRA);
+- **API Client**: Apollo Client + GraphQL;
+- **State Management**: React Context API.
