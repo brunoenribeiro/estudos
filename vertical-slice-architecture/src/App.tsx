@@ -1,9 +1,9 @@
-import Todos from "./pages/Todos";
+import Home from "./pages/Todos";
 
 function App() {
   return (
     <main className="App">
-      <Todos />
+      <Home />
     </main>
   );
 }

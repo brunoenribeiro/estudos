@@ -2,11 +2,7 @@ import { FC } from 'react';
 import { CreateTodo, TodoList } from '../../presentation/Todos';
 import { useTodos } from '../../models';
 
-const Todos: FC = () => {
-  /*
-    PONTOS CONTRA A ARQUITETURA:
-    - useTodos deveria requerir Todos, ao invés do componente pedir.
-  */
+const Home: FC = () => {
   const { toggleTodo, deleteTodo, createTodoIfUnique } = useTodos();
   
   return (<div>
@@ -23,4 +19,4 @@ const Todos: FC = () => {
   </div>)
 };
 
-export default Todos;
+export default Home;
