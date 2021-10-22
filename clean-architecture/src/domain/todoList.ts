@@ -12,6 +12,6 @@ export function addTodo(todoList: TodoList, todo: Todo): TodoList {
   return [...todoList, todo];
 }
 
-export function deleteTodo(todoList: TodoList, todo: Todo): TodoList {
-  return todoList.filter(t => t.id !== todo.id);
+export function deleteTodo(todoList: TodoList, todoId: Todo['id']): TodoList {
+  return todoList.filter(t => t.id !== todoId);
 }

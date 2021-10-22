@@ -1,9 +1,9 @@
-import TodoList from "./ui/pages/TodoList";
+import { Home } from "./ui/pages";
 
 function App() {
   return (
     <main className="App">
-      <TodoList />      
+      <Home />      
     </main>
   );
 }

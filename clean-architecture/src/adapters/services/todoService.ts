@@ -30,8 +30,14 @@ const TodoTestServerService: ITodoService = {
     };
   },
   deleteTodo: async (id) => {
-    // TODO: IMPLEMENT API REQUEST
-    return 'bar';
+    const { data } = await getGraphQLClient().mutate(
+      `mutation DeleteTodo($id: ID!) {
+        deleteTodo(id: $id)
+      }`,
+      { id }
+    );
+
+    return data.deleteTodo;
   }
 };
 
