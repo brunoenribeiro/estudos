@@ -6,6 +6,7 @@ export interface ITodoService {
   getTodos(): Promise<TodoList>;
   addTodo(description: Todo['description']): Promise<Todo>;
   deleteTodo(id: Todo['id']): Promise<Todo['id']>;
+  toggleTodo(id: Todo['id'], done: Todo['done']): Promise<Todo['id']>;
 }
 
 const TodoTestServerService: ITodoService = {
@@ -47,6 +48,16 @@ const TodoTestServerService: ITodoService = {
     );
 
     return data.deleteTodo;
+  },
+  toggleTodo: async (id, done) => {
+    const { data } = await getGraphQLClient().mutate(
+      `mutation ToggleTodo($id: ID!, $done: Boolean!) {
+        toggleTodo(id: $id, done: $done)
+      }`,
+      { id, done },
+    );
+
+    return data.toggleTodo;
   }
 };
 
