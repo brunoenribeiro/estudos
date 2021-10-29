@@ -3,5 +3,3 @@ export interface Todo {
   description: string;
   done: boolean;
 }
-
-export type CreateTodoInput = Pick<Todo, 'description' | 'done'>;
