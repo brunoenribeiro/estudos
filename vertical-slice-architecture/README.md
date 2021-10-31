@@ -2,14 +2,18 @@
 
 Estudo de arquitetura baseado na proposta do [Apollo Server](https://www.apollographql.com/blog/apollo-client/architecture/client-side-architecture-basics/).
 
-## Instalação
+## Uso
+
+🐳 Com Docker:
+
+- Clone este repositório;
+- `docker-compose up`.
+
+Sem Docker:
 
 - Clone o [servidor de testes](https://github.com/brunoenribeiro/estudos/tree/main/todo-server);
 - Clone este repositório;
-- Execute `yarn install` em ambos repositórios.
-
-## Uso
-
+- `yarn install` em ambos repositórios;
 - `yarn start` em ambos repositórios;
 - Acesse `http://localhost:3000`.
 
