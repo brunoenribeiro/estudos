@@ -7,7 +7,8 @@ Estudo de arquitetura baseado na proposta do [Apollo Server](https://www.apollog
 🐳 Com Docker:
 
 - Clone este repositório;
-- `docker-compose up`.
+- `docker-compose up`;
+- Acesse `http://localhost:3000`.
 
 Sem Docker:
 
