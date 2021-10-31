@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Box, Checkbox, Typography, FormGroup, FormControlLabel, Button } from '@material-ui/core';
 import { DeleteForever } from '@material-ui/icons';
-import { useGetTodos } from '../../handlers';
+import { useGetTodos } from '../handlers';
 
 interface Props {
   onCheck: (todoId: string, checked: boolean) => void;

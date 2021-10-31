@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import { Box, Typography, CircularProgress } from '@material-ui/core';
-import { CreateTodo, TodoList } from '../presentation/Todos';
-import { useToggleTodo, useDeleteTodo, useCreateTodo } from '../handlers';
+import { CreateTodo, TodoList } from './components';
+import { useToggleTodo, useDeleteTodo, useCreateTodo } from './handlers';
 
-export const Home: FC = () => {
+export const Todos: FC = () => {
   const { createTodoIfUnique, loading: isCreatingTodo } = useCreateTodo();
   const { toggleTodo, loading: isTogglingTodo } = useToggleTodo();
   const { deleteTodo, loading: isDeletingTodo } = useDeleteTodo();

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useQuery, useLazyQuery, gql } from '@apollo/client';
-import { Todo } from "../../models/Todo";
+import { Todo } from "../models/Todo";
 
 interface GetTodosResult {
   todos: Array<{

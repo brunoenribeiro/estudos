@@ -1,9 +1,9 @@
-import { Home } from "./pages";
+import { Todos } from "./features/todos/Todos";
 
 function App() {
   return (
     <main className="App">
-      <Home />
+      <Todos />
     </main>
   );
 }
