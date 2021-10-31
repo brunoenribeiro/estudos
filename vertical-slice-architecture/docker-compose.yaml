@@ -1,0 +1,10 @@
+version: "3"
+services:
+  client:
+    image: brunoenribeiro/vertical-slice-arch-todos:1.0
+    ports:
+      - "3000:3000"
+  server:
+    image: brunoenribeiro/todo-server:1.0
+    ports:
+      - "4000:4000"
